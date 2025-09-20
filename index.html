@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MRSK Financial & Insurance Services Consultancy</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0f2027;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo-container { display: flex; align-items: center; }
+    .logo { height: 50px; margin-right: 10px; }
+    header h1 { font-size: 1.2rem; color: #ffd700; }
+
+    nav ul { list-style: none; display: flex; }
+    nav ul li { margin: 0 15px; }
+    .nav-link {
+      color: #fff; text-decoration: none; font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    .nav-link:hover { color: #ffd700; }
+
+    /* Sections */
+    .section {
+      min-height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+      flex-direction: column;
+    }
+
+    .section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #0f2027;
+    }
+
+    /* Home */
+    #home {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+    #home h2 { color: #ffd700; }
+    .poster {
+      max-width: 500px;
+      width: 100%;
+      margin: 30px auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      display: block;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: #ffd700;
+      color: #000;
+      padding: 12px 25px;
+      border-radius: 30px;
+      margin-top: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .cta-btn:hover {
+      background: #ffea00;
+      transform: scale(1.05);
+    }
+
+    /* About */
+    #about {
+      background: #fff;
+      color: #333;
+      text-align: left;
+      border-radius: 15px;
+      max-width: 900px;
+      margin: auto;
+      padding: 50px 30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    #about h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    #about p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+    #about h3 { margin-top: 25px; }
+    #about a {
+      color: #0f2027;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    #about a:hover { text-decoration: underline; }
+
+    /* Services */
+    #services ul { list-style: none; padding: 0; }
+    #services li {
+      font-size: 1.2rem;
+      margin: 15px 0;
+      background: #eaf0f6;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 { font-size: 1rem; }
+      nav ul li { margin: 0 8px; }
+      .section h2 { font-size: 1.8rem; }
+      #services li { font-size: 1.1rem; padding: 12px; }
+    }
+    @media (max-width: 480px) {
+      header { flex-direction: column; }
+      .logo { height: 40px; }
+      header h1 { font-size: 0.9rem; margin-top: 5px; }
+      .section h2 { font-size: 1.5rem; }
+      #services li { font-size: 1rem; padding: 10px; }
+    }
+
+    /* Footer */
+    footer {
+      background: #0f2027;
+      padding: 15px;
+      text-align: center;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="c:\Users\Admin\Desktop\simran\logo.jpeg" alt="MRSK Logo" class="logo">
+      <h1>MRSK Financial & Insurance Services Consultancy</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="section">
+    <div class="content">
+      <h2>Welcome to MRSK Financial Services</h2>
+      <p>Helping you grow wealth with <strong>SIP, Mutual Funds, and Insurance Solutions</strong>.</p>
+      <img src="c:\Users\Admin\Desktop\simran\poster.jpeg" alt="Financial Poster" class="poster">
+      <a href="http://p.njw.bz/14133" target="_blank" class="cta-btn">Start Investing Now</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="content">
+      <h2>About Us</h2>
+      <p>We are a professional financial services consultancy led by <strong>Mahesh Kumar</strong>, 
+      an <strong>AMFI-registered mutual fund distributor</strong>. Our mission is to guide individuals and businesses in achieving financial security through expert advice in SIPs, Mutual Funds, and Insurance solutions.</p>
+      <p>With years of experience in financial markets, we provide <strong>transparent, personalized, and trusted consultancy</strong> to help you achieve long-term wealth creation.</p>
+      
+      <h3>Contact Us</h3>
+      <p><strong>Phone:</strong> <a href="tel:9968613717">9968613717</a></p>
+      <p><strong>Email:</strong> <a href="mailto:maheshk188@gmail.com">maheshk188@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="content">
+      <h2>Our Services</h2>
+      <ul>
+        <li>✔️ Systematic Investment Plans (SIP)</li>
+        <li>✔️ Mutual Fund Investments</li>
+        <li>✔️ Life & General Insurance</li>
+        <li>✔️ Financial Planning & Consultancy</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MRSK Financial & Insurance Services Consultancy | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
